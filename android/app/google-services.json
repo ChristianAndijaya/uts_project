@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "293490610334",
+    "project_id": "uas-project-c4007",
+    "storage_bucket": "uas-project-c4007.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:293490610334:android:8277b141100fd315e7eb8f",
+        "android_client_info": {
+          "package_name": "com.example.uts_project"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "293490610334-susf9qcbq36i006h0lhreg9e6kbe25d2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAoN6pt12LCINpDg4zcujidGLLo3r_ik1E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "293490610334-susf9qcbq36i006h0lhreg9e6kbe25d2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,10 +1,19 @@
 import 'package:flutter/material.dart';
-
+import 'package:firebase_auth/firebase_auth.dart';
 import 'components/primary_button.dart';
 import 'screens/chats/chats_screen.dart';
 
+
 class LoginPage extends StatelessWidget {
-  const LoginPage({Key? key}) : super(key: key);
+  final emailController = TextEditingController();
+  final passwordController = TextEditingController();
+
+  @override
+  void dispose(){
+    emailController.dispose();
+    passwordController.dispose();
+
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -21,13 +30,15 @@ class LoginPage extends StatelessWidget {
                     child: Column(
                       children: [
                         Image.asset("images/Jejayy.png", height: 300,),
-                        const TextField(
+                          TextField(
+                          controller: emailController,
                           decoration: InputDecoration(
                             labelText: "Email"
                           ),
                         ),
                         const SizedBox(height: 16,),
-                        const TextField(
+                          TextField(
+                          controller: passwordController,
                           obscureText: true,
                           decoration: InputDecoration(
                             labelText: "Password"
@@ -51,5 +62,6 @@ class LoginPage extends StatelessWidget {
         ),
       )
     );
+
   }
 }

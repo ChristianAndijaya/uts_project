@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:uts_project/register_screen.dart';
 import '../components/primary_button.dart';
 import '../login_screen.dart';
 import '../screens/chats/chats_screen.dart';
 import '../screens/constants.dart';
+import 'package:uts_project/signinOrSignUp/signin_or_signup_screen.dart';
 
 class SigninOrSignupScreen extends StatelessWidget {
   @override
@@ -32,8 +34,11 @@ class SigninOrSignupScreen extends StatelessWidget {
           PrimaryButton(
             color: Theme.of(context). colorScheme.secondary,
             text: "Sign Up",
-            press: () {},
-             ),
+            press: () => Navigator.push(context, MaterialPageRoute(
+              builder: (context) => RegisterPage(),
+            ),
+            ),
+          ),
               Spacer(flex: 2),
             ],
           ),
